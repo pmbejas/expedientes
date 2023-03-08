@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    --colorEnlaceMenu: rgb(197, 197, 197);
+    --colorEnlaceMenuHover: rgb(50, 31, 117);
+    --colorFondoMenuPrincipal: rgb(11, 7, 22);
+    --colorSombraMenu: rgba(101, 92, 112, 0.5);
+    --tamanoFuenteMenu: 1em;
+    --tamanoFuenteMenuMobile: 2em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorFondoMenuPrincipal);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.menuPrincipalDesktop {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px var(--colorSombraMenu);
+    background-color: var(--colorFondoMenuPrincipal);
+    margin: 10px 0;
+    width: 95%;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--colorEnlaceMenu);
+}
+
+.menuPrincipalMobile {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px var(--colorSombraMenu);
+    background-color: var(--colorFondoMenuPrincipal);
+    margin: 10px 10px;
+    width: 85%;
+    text-decoration: none;
+    color: var(--colorEnlaceMenu);
+}
+
+.itemMenuIcono {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.itemMenuOpciones {
+    display: flex;
+    flex-basis: 70%;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.navAncla {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--colorEnlaceMenu);
+    font-size: var(--tamanoFuenteMenu);
+}
+
+.navAnclaMobile {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--colorEnlaceMenu);
+    font-size: var(--tamanoFuenteMenuMobile);
+}
+
+.navIcono {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--colorEnlaceMenu);
+    font-size: var(--tamanoFuenteMenu);
+}
+
+.navIconoMobile {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--colorEnlaceMenu);
+    font-size: var(--tamanoFuenteMenuMobile);
+}
+
+.navUsuario {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--colorEnlaceMenu);
+    font-size: var(--tamanoFuenteMenu);
+}
+
+.navAncla:hover {
+    color: var(--colorEnlaceMenuHover)
+}
+
+.itemMenuUsuario {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .menuPrincipalDesktop {
+        display: none;
+    }
+    .menuPrincipalMobile {
+        display: flex;
+    }
+  }
+
+@media (min-width: 600px) {
+    .menuPrincipalDesktop {
+        display: flex;
+    }
+    .menuPrincipalMobile {
+        display: none;
+    }
+  }
